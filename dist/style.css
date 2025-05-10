@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Political Ideology Test</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div id="intro">
+
+        <h1 id="welcome-heading">Welcome to the Political Ideology Test</h1>
+
+        <p id="intro-text">
+
+            Through this test, we aim to help you understand your position on political, social, and economic issues. Answer the following questions honestly to receive your ideological classification.
+
+        </p>
+
+        <button class="button" onclick="startQuiz()">Start Test</button>
+
+        <br><br>
+
+        <button class="button" onclick="toggleLanguage()">
+
+            <span id="language-span">English</span>
+
+        </button>
+
+    </div>
+
+    <div id="quizSection" style="display: none;">
+
+        <div class="question-container">
+
+            <p id="questionText">Question text will appear here</p>
+
+            <div id="options-container">
+
+                <!-- Options will appear here -->
+
+            </div>
+
+        </div>
+
+        <button class="button" onclick="nextQuestion()">Next Question</button>
+
+    </div>
+
+    <div id="resultSection" style="display: none;">
+
+        <div class="result">
+
+            <p id="resultText"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>政治意识形态测试</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #f4f4f4;
+
+            color: #333;
+
+        }
+
+        header {
+
+            background-color: #0073e6;
+
+            color: white;
+
+            padding: 15px;
+
+            text-align: center;
+
+        }
+
+        main {
+
+            padding: 20px;
+
+        }
+
+        #quizSection, #resultSection {
+
+            display: none;
+
+        }
+
+        button {
+
+            background-color: #0073e6;
+
+            color: white;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+        }
+
+        button:hover {
+
+            background-color: #005bb5;
+
+        }
+
+        label {
+
+            display: block;
+
+            margin: 10px 0;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1 id="welcome-heading">欢迎来到政治意识形态测试</h1>
+
+        <button id="language-button" onclick="toggleLanguage()">切换语言</button>
+
+        <span id="language-span">中文</span>
+
+    </header>
+
+    <main>
+
+        <section id="intro">
+
+            <h2 id="intro-heading">测试说明</h2>
+
+            <p id="intro-text">通过这个测试，我们旨在帮助您了解自己在政治、社会和经济问题上的立场。请根据您的真实想法回答以下问题。</p>
+
+            <button onclick="startQuiz()">开始测试</button>
+
+        </section>
+
+        <section id="quizSection">
+
+            <p id="questionText"></p>
+
+            <div id="options-container"></div>
+
+            <button onclick="nextQuestion()">下一题</button>
+
+        </section>
+
+        <section id="resultSection">
+
+            <h2 id="result-heading">测试结果</h2>
+
+            <p id="resultText"></p>
+
+            <button onclick="startQuiz()">重新开始</button>
+
+        </section>
+
+    </main>
+
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
